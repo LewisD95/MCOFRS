@@ -1,0 +1,1178 @@
+\documentclass{standalone}
+%%ALL COORDINATES % 100
+\usepackage{tikz,hyperref}
+\usetikzlibrary{calc}
+\usepackage{rotating}
+
+\tikzset{
+    ultra thin/.style= {line width=0.1pt},
+    very thin/.style=  {line width=0.2pt},
+    thin/.style=       {line width=0.4pt},
+    semithick/.style=  {line width=0.6pt},
+    thick/.style=      {line width=0.8pt},
+    very thick/.style= {line width=2.0pt},
+    ultra thick/.style={line width=2.8pt} % Standard 1.6pt
+}
+
+\begin{document}
+\begin{turn}{0}
+\begin{tikzpicture}
+
+
+\coordinate (credits) at (40,-56);
+\node[rotate=0,anchor=east] at (credits) {Map provided by LewisD95};
+%%%%%%%%%%%%%
+%COORDINATES%
+%%%%%%%%%%%%%
+\coordinate (Spawn) at (0,0);
+
+    %%% ORIENTAL (NORTH)
+\coordinate (TowerStation) at (0,2);
+\coordinate (Residaemian) at (0,4);
+		\coordinate (Residaemian2) at (-2,6);
+	\coordinate (PortLast) at (-2,12);
+	\coordinate (HillValley) at (-2,14);
+\coordinate (Batugus) at (0,6);
+		%\coordinate (BatHell) at (3,6);
+\coordinate (Pokethedral) at (0,8);
+\coordinate (Epicaria) at (0,10);
+\coordinate (StromIsle) at (0,12);
+    \coordinate (Ocean) at (3,12);
+    \coordinate (Lumen) at (3,10);
+    \coordinate (NoseFish) at (3,8);
+    \coordinate (HellView) at (3,4);
+\coordinate (Plummet) at (0,16);
+\coordinate (Gamecity) at (0,18);
+\coordinate (EireMall) at (0,20);
+\coordinate (NexusN3) at (0,22);
+\coordinate (EastAustania) at (0,24);
+\coordinate (Wiexbaux) at (0,25);
+\coordinate (StatuePark) at (9,27);
+	\coordinate (StatueParkSt) at (0,27);
+\coordinate (Townbuildthing) at (-19,34);
+	\coordinate (TownbuildthingSt) at (0,28);
+	\coordinate (TownbuildthingBend) at (-19,28);
+	\coordinate (PhoenixPark) at (-19,37);
+	\coordinate (PhoenixTrainStation) at (-19,36);
+	\coordinate (TbtDesert) at (-19,35);
+	\coordinate (NewSnaktown) at (-24,34);
+	\coordinate (SkyFRS) at (-29,34);
+	
+\coordinate (TwinlakesSt) at (0,29);
+	\coordinate (Twinlakes) at (3,29);
+	\coordinate (OrientalGatewayStation) at (3,30);
+	\coordinate (Pandaville) at (3,34);
+\coordinate (Emrys) at (0,33);
+	\coordinate (MockingStation) at (1,33);
+	\coordinate (LedgerPointStation) at (7,33);	
+	\coordinate (AnnaStation) at (9,33);	
+	\coordinate (HorizonPeaks) at (27,33);
+	\coordinate (Pandacross) at (3,33);
+	\coordinate (NewKronaSt) at (12,33);
+	\coordinate (NewKrona) at (12,34);
+	\coordinate (JensenResort) at (12,36);
+	\coordinate (Nari1102) at (12,39);
+	
+	\coordinate (SnakyStation) at (-6,33); %??
+	\coordinate (AirStation) at (-9,33);
+	\coordinate (SkyLab) at (-12,33);
+	\coordinate (SkyLabBend) at (-14,33);
+	\coordinate (PhoenixPort) at (-14,39);
+	\coordinate (EclipseBankStation) at (-17,39);
+	\coordinate (AngardStation) at (-19,39);
+	\coordinate (PhoenixStadium) at (-21,39);
+	\coordinate (FlameStation) at (-23,39);
+	\coordinate (Socorro) at (-23,41);
+	\coordinate (Forrrest) at (-29,41);
+	\coordinate (NorthNoobIsland) at (-29,43);
+	\coordinate (MiningDepot) at (-14,24);
+	\coordinate (ExtremeHills) at (-14,22);
+		\coordinate (MidwayJunction) at (-13,22);
+		\coordinate (HuStation) at (-12,22);
+	\coordinate (PortDomesM) at (-14,-2);
+		\coordinate (PortDomesMC) at (-14,0);;
+		\coordinate (MSky) at (-14,28);
+		
+	
+	
+	
+	\coordinate (TownBend) at (-17,34);
+	\coordinate (TownBend2) at (-15,36);
+	\coordinate (SkyVillage) at (8,36);
+	\coordinate (Modos) at (10,37);
+		\coordinate (ModosSt) at (10,36);
+	\coordinate (RubeGoldbergCompetition) at (10,39);
+	\coordinate (Samerator) at (10,40);
+	\coordinate (TownCross) at (0,36);	
+	\coordinate (TownCross2) at (-14,36);		
+	\coordinate (TownCross3) at (2,36);
+	
+	
+	
+\coordinate (SanFreedonia) at (0,35); %No station
+\coordinate (WBMCo) at (0,37);
+\coordinate (NewHaven) at (0,39);
+
+\coordinate (NewHavenM) at (2,39);
+\coordinate (SanFreedoniaM) at (2,35);
+\coordinate (Gabilzaharn) at (2,37);
+\coordinate (HorseRaces) at (2,38);
+
+
+
+
+\coordinate (NorthSplit) at (0,41);
+\coordinate (NorthSplitW) at (-1,41);
+\coordinate (NorthSplitE) at (1,41);
+\coordinate (NorthOfNowhere) at (1,43);
+\coordinate (endoflineOrE) at (1,45);
+\coordinate (endoflineOrW) at (-1,45);
+
+    %%% LAVATOWN (EAST)
+\coordinate (BatugusLabsSt) at (5,0);
+		\coordinate (BatugusLabs) at (1.3,6);
+		\coordinate (BatugusLabsSt2) at (5,6);
+\coordinate (NewAtlanta) at (7,0);
+	\coordinate (GothamCity) at (7,-6);
+\coordinate (Xenotopia) at (9,0);
+\coordinate (SandIsland) at (11,-2);
+		\coordinate (SandIslandSt) at (11,0);
+		\coordinate (SandIslandY) at (11,-3);
+    \coordinate (HalfMoonVale) at (10,-6);
+    		\coordinate (HalfMoonValeSt) at (10,-4);
+    \coordinate (KuraiCho) at (12,-6);
+    		\coordinate (KuraiChoSt) at (12,-4);
+\coordinate (Nazca) at (13,1);
+		\coordinate (NazcaSt) at (13,0);
+    \coordinate (FoCU) at (17,3);
+    		\coordinate (FoCUSt) at (13,3);
+    \coordinate (SigmaCastle) at (13,13);
+    \coordinate (HellFireForge) at (9,3);
+\coordinate (RtkweIsland) at (14,0);
+\coordinate (ZeldaMap) at (16,0);
+\coordinate (EmucraftCity) at (18,-5);
+		\coordinate (EmucraftCitySt) at (18,0);
+    \coordinate (CastleCity) at (18,-7);
+    \coordinate (NewLands) at (18,-13); 					%%% SAME LINE AS RAVENSTOWN
+    		\coordinate (Mart) at (17,-13);
+		\coordinate (Farm) at (16,-13);
+		\coordinate (Zombie) at (15,-13);
+\coordinate (Lavatown) at (20,0);
+	\coordinate (IsleOfMuu) at (20,-7);
+		\coordinate (IsleOfMuuSt) at (20,-1);
+	\coordinate (LothendalManor) at (22,-2.5);
+	\coordinate (PortDahl) at (22,-4);
+		\coordinate (PortDahlSt) at (22.5,-4.5);
+	\coordinate (HotelRecluse) at (23,-4);
+	\coordinate (LothendalCo) at (24,-4);
+	\coordinate (RavinesStadium) at (25,-4);
+	\coordinate (RavinesOverlook) at (25.5,-4.5);
+\coordinate (NexusE1) at (22,0);
+\coordinate (DeltaCity) at (24,13);
+		\coordinate (DeltaCitySt) at (24,0);
+		\coordinate (DeltaArroyo) at (24,11);
+    \coordinate (Arroyo) at (25,11);
+\coordinate (JimmyVille) at (26,1);
+	\coordinate (JimmyVilleSt) at (26,0);
+\coordinate (NewArcton) at (28,13);
+	\coordinate (NewArctonSt) at (28,0);
+\coordinate (Jannerville) at (29,0);
+\coordinate (Borderlands) at (30,0);
+\coordinate (Mycelia) at (38,-11);
+	\coordinate (MyceliaSt) at (38,-1);
+	\coordinate (MyceliaSt1) at (32,0);
+	\coordinate (MyceliaSt2) at (32,-1);
+	\coordinate (MyceliaNovum1) at (30,-11);
+	\coordinate (MyceliaNovum2) at (29,-12);
+\coordinate (Monkokoro) at (33,13);
+	\coordinate (MonkokoroSt) at (33,0);
+\coordinate (Newcuntington) at (39,0);
+
+    %%% OCCIDENTAL (SOUTH)
+\coordinate (Catville) at (0,-2);
+%\coordinate (DrumCity) at (0,-10);
+\coordinate (DialRepublic) at (0,-5);
+\coordinate (CobJob) at (5.5,-6);
+		\coordinate (CobJobSt) at (0,-6);
+\coordinate (RigCity) at (8.5,-8);
+		\coordinate (RigCitySt) at (0,-8);
+		\coordinate (RigCityStN) at (3,-8);
+\coordinate (BoxAlpha) at (-2,-9);
+		\coordinate (BoxAlphaSt) at (0,-9);
+\coordinate (Glenfiddich) at (0,-11);
+	\coordinate (NexusE) at (3,-7.5);
+		\coordinate (NexusESt) at (3,-11);
+\coordinate (Ravenstown) at (0,-13); %Same y as NewLands
+	\coordinate (CosmicCity) at (-4,-14);
+	\coordinate (CosmicCitySt) at (-1,-14);
+	\coordinate (Autumnwood) at (-6,-14);
+\coordinate (ForestbergSt) at (0,-17);
+	\coordinate (FortreeSt) at (11,-17);
+		\coordinate (Fortree) at (11,-16);
+		\coordinate (FortreeNLSt) at (11,-14);
+		\coordinate (FortreeNLSt2) at (12,-13);
+		\coordinate (CommunityCastle) at (12,-12);
+		\coordinate (Monople) at (12,-9);
+		\coordinate (DawnPark) at (11,-19);
+		\coordinate (Residential) at (12,-19);
+		\coordinate (Suburbs) at (13,-19);
+		\coordinate (SuburbsSt) at (14.5,-19);
+	\coordinate (ForestbergSt2) at (14.5,-17);
+	\coordinate (Forestberg) at (14.5,-19);
+\coordinate (Skyline) at (20,-19);
+	\coordinate (SkylineSt) at (18,-17);
+	\coordinate (MonopleVille) at (22,-17);
+\coordinate (NewLandsSky) at (20,-15);
+\coordinate (NewLandsSkyMonopleCross) at (20,-17);
+\coordinate (Xanderstrike) at (0,-19);
+\coordinate (ThreeBiomesSt) at (0,-22);
+	\coordinate (ThreeBiomesSt2) at (17,-19);
+	\coordinate (ThreeBiomes) at (17,-21);
+	\coordinate (NexusSE2St) at (11,-22);
+		\coordinate (NexusSE2) at (12,-21);
+	\coordinate (NovumCulta) at (29,-21); % same x as littleamerica
+	\coordinate (LittleAmerica) at (29,-22); % same x as jannerville
+	\coordinate (GreenAcres) at (33,-22); % same x as mycelia
+		\coordinate (MystriaSt) at (32,-22);
+		\coordinate (Mystria) at (32,-30); % x between L.A. and G.A., y as golden junction
+\coordinate (Newwood) at (0,-24);
+\coordinate (TeslaTown) at (-2,-25);
+	\coordinate (TeslaTownSt) at (0,-25);
+\coordinate (Jordan) at (-5,-26);
+	\coordinate (JordanSt) at (0,-26);
+\coordinate (NexusS1) at (0,-28);
+\coordinate (Westwood) at (-2,-30);
+	\coordinate (WestwoodSt) at (0,-30);
+\coordinate (Mushieville) at (0,-32);
+\coordinate (Kryptopia) at (2,-34);
+	\coordinate (KryptopiaSt) at (0,-34);
+
+\coordinate (GoldenJunction) at (0,-37);%\coordinate (s1) at (5,-37);%\draw[fill=teal] (s1) circle (0.01);
+	\coordinate (MiniAvalon) at (-2,-37);
+	\coordinate (NewDublin) at (-3,-37);
+	\coordinate (WitchFarm) at (-6,-37);
+	\coordinate (AcaciaRoadsInt) at (-14,-37);
+		\coordinate (AcaciaRoads) at (-17,-38);
+			\coordinate (AcaciaRoadsSt) at (-14,-38);
+		\coordinate (unnamed) at (-14,-39);
+		\coordinate (AlSanara) at (-14,-40);
+		\coordinate (SilverBullet) at (-14,-41);
+		\coordinate (NewEdenBranch) at (-14,-42);
+			\coordinate (SunriseHotel) at (-18,-42);
+			\coordinate (NewEden) at (-24,-42);
+		\coordinate (AcaciaGlade) at (-10,-42);
+		\coordinate (AcaciaGladeSouth) at (-8,-42);			
+
+		\coordinate (AlunVillage) at (-12,-39);
+		\coordinate (LostTemple) at (-12,-40);		
+		\coordinate (PonnVillage) at (-12,-41);
+		\coordinate (SandStoneTower) at (-11,-41);
+	\coordinate (FourthBay) at (-8,-44);
+	\coordinate (NovaTown) at (-8,-46);
+	\coordinate (NewLouisville) at (-8,-48);
+	\coordinate (NewLouisvilleCitySq) at (-8,-49);
+	\coordinate (FRSSouthHub) at (-8,-51);
+	\coordinate (EllandriaHwy) at (-8,-53);
+	\coordinate (OldSouthBorder) at (-8,-57);
+
+\coordinate (Annasforest) at (0,-39);
+\coordinate (Frostagon) at (0,-40);
+\coordinate (WizardHomeSt) at (0,-42);
+	\coordinate (WizardHome) at (-3,-42);
+	\coordinate (ExplorersIsland) at (-5,-42);
+	\coordinate (MountNyan) at (-6,-42);
+	
+\coordinate (GranSyre) at (20,-44);
+	\coordinate (GranSyreSt) at (0,-44);
+\coordinate (DragonRiverPeakSt) at (0,-48);
+\coordinate (DownTown) at (2,-48);
+\coordinate (AnnaB) at (3,-48);
+\coordinate (AirpP) at (4,-48);
+\coordinate (FrtB) at (5,-48);
+
+\coordinate (FRSSouth) at (0,-51);
+\coordinate (BowbyIsland) at (0,-56);
+\coordinate (endoflineOcc) at (0,-57);
+
+
+
+    %%% GREAT NORTHERN (WEST)
+\coordinate (DrumCity) at (0,-4);
+\coordinate (Underworld) at (-2,0);
+\coordinate (UnderworldSt) at (-2,-2);
+\coordinate (StoneBurrow) at (-4,0);
+\coordinate (CentralNexus) at (-6,-2);
+	\coordinate (CentralNexusSt) at (-6,0);
+\coordinate (CasaAustria) at (-7,4);
+	\coordinate (CasaAustriaSt) at (-7,0);
+\coordinate (ShoreTown) at (-9,0);
+\coordinate (Melonopolis) at (-11,-4);
+	\coordinate (MelonopolisSt) at (-11,0);
+\coordinate (Logdon) at (-12,0);
+\coordinate (DiamondMall) at (-13,-5);
+	\coordinate (DiamondMallSt) at (-13,0);
+\coordinate (JoppaLine) at (-15.5,0);
+\coordinate (ForbiddenOutpost) at (-17,0);
+	\coordinate (ForbiddenOutpostSt) at (-17,-2);
+	\coordinate (NewVenice) at (-19,-8);
+	\coordinate (NewVeniceSt) at (-19,-2);)
+	\coordinate (PortDomes) at (-17, -5);
+	\coordinate (PortDomesCastle) at (-16,-5);
+	\coordinate (NexusWest) at (-15,-5);
+\coordinate (CBookMuseum) at (-18,0);
+\coordinate (AmpCity) at (-19,0);
+\coordinate (Dragonshold) at (-20,6);
+	\coordinate (DragonsholdSt) at (-20,0);
+\coordinate (Quarryton) at (-24,0);
+\coordinate (Floatania) at (-28,6);
+	\coordinate (FloataniaSt) at (-28,0);
+	\coordinate (Rasuka) at (-28,8);
+\coordinate (Deckland) at (-29,18);
+\coordinate (Strasbourg) at (-29,23);
+\coordinate (Obernai) at (-29,25);
+	    \coordinate (YObernai) at (-29,0);
+	    \coordinate (FRSNWHub) at (-29,37);
+	    \coordinate (ColllumnsBend) at (-27,37);
+	    \coordinate (Colllumns) at (-27,39);
+	    \coordinate (HedgeMaze) at (-25,39);	    
+	    
+	    
+\coordinate (CoffeeTowne) at (-31,0);
+\coordinate (OldWestBorder) at (-33,0);
+
+
+
+
+%%%%%%%
+%LINES%
+%%%%%%%
+
+
+    %%% Oriental
+ %-- (1:0.9599) -- (Catville);
+\draw[ultra thick, blue] (NorthSplitE) -- (NorthSplitW);
+\draw[ultra thick, blue] (NorthSplitE) -- (endoflineOrE);
+\draw[ultra thick, blue,dotted] (endoflineOrW) -- (NorthSplitW);
+\draw[ultra thick, blue] (HellView) -- (BatugusLabs);
+\draw[ultra thick, blue] (StromIsle) -- (Ocean);
+\draw[ultra thick, blue] (Ocean) -- (NoseFish);
+\draw[ultra thick, blue] (NoseFish) -- (HellView);
+\draw[ultra thick, blue] (Twinlakes) -- (Pandaville);
+\draw[ultra thick, blue] (StatuePark) -- (StatueParkSt);
+\draw[ultra thick, blue] (Townbuildthing) -- (TownbuildthingBend);
+
+\draw[ultra thick, blue] (TwinlakesSt) -- (Twinlakes);
+
+
+		%%% BRANCHES
+			\draw[ultra thick, cyan] (NewHavenM) -- (SanFreedoniaM);
+			\draw[ultra thick, cyan,dotted] (NewHavenM) -- (NewHaven);
+			\draw[ultra thick, cyan,dotted] (SanFreedonia) -- (SanFreedoniaM);
+			\draw[white, fill=white] (TownCross3) circle (0.1);				
+			\draw[ultra thick, cyan] (Residaemian) -- (Residaemian2);	
+			\draw[ultra thick, cyan] (Residaemian2) -- (PortLast);	
+			\draw[ultra thick, cyan] (HillValley) -- (PortLast);			
+			\draw[ultra thick, cyan] (Emrys) -- (HorizonPeaks);
+			\draw[ultra thick, cyan] (Emrys) -- (SkyLabBend);	
+			\draw[white, fill=white] (Pandacross) circle (0.1);
+			\draw[ultra thick, cyan] (PhoenixPort) -- (SkyLabBend);
+			\draw[ultra thick, cyan] (PhoenixPort) -- (FlameStation);
+			\draw[ultra thick, cyan] (Socorro) -- (FlameStation);
+			\draw[ultra thick, cyan] (Townbuildthing) -- (AngardStation);
+			\draw[ultra thick, cyan] (Townbuildthing) -- (SkyFRS);
+			\draw[ultra thick, cyan] (FRSNWHub) -- (ColllumnsBend);
+			\draw[ultra thick, cyan] (Colllumns) -- (ColllumnsBend);
+			\draw[ultra thick, cyan] (Colllumns) -- (HedgeMaze);
+			\draw[ultra thick, cyan,dotted] (FlameStation) -- (HedgeMaze);
+			\draw[white, fill=white] (TownCross2) circle (0.1);	
+			\draw[ultra thick, cyan] (Townbuildthing) -- (TownBend);	
+			\draw[ultra thick, cyan] (TownBend) -- (TownBend2);						
+			\draw[ultra thick, cyan] (ModosSt) -- (TownBend2);				
+			\draw[ultra thick, cyan] (ModosSt) -- (Samerator);
+			\draw[white, fill=white] (TownCross) circle (0.1);	
+			\draw[ultra thick, cyan,dotted] (NewKronaSt) -- (Nari1102);
+			
+			\draw[ultra thick, cyan] (SkyLabBend) -- (PortDomesM);
+			\draw[white, fill=white] (MSky) circle (0.1);	
+			\draw[ultra thick, blue] (TownbuildthingSt) -- (TownbuildthingBend);
+			\draw[very thick, cyan] (HuStation) -- (ExtremeHills);
+			\draw[ultra thick, cyan] (PortDomes) -- (PortDomesM);
+			\draw[white, fill=white] (PortDomesMC) circle (0.1);	
+			
+			
+			
+			
+
+
+					
+							
+			
+
+\draw[ultra thick, blue] (Spawn) -- (NorthSplit);		
+\draw[ultra thick, blue] (Pandaville) -- (Twinlakes);
+
+
+
+
+
+
+
+
+    %%% Lavatown
+\draw[ultra thick, orange] (Spawn) -- (Newcuntington);
+\draw[ultra thick, orange] (BatugusLabsSt) -- (BatugusLabsSt2);
+\draw[ultra thick, orange] (BatugusLabsSt2) -- (BatugusLabs);
+\draw[ultra thick, blue] (Batugus) -- (BatugusLabs);
+\draw[ultra thick,cyan] (NewAtlanta) -- (GothamCity);
+
+\draw[ultra thick, orange] (SandIslandSt) -- (SandIslandY);
+\draw[ultra thick, orange] (SandIslandY) -- (HalfMoonValeSt);
+\draw[ultra thick, orange] (SandIslandY) -- (KuraiChoSt);
+\draw[ultra thick, orange] (HalfMoonVale) -- (HalfMoonValeSt);
+\draw[ultra thick, orange] (KuraiCho) -- (KuraiChoSt);
+\draw[ultra thick,cyan] (CastleCity) -- (NewLands);
+\draw[ultra thick, orange] (NazcaSt) -- (Nazca);
+\draw[ultra thick, orange] (FoCUSt) -- (FoCU);
+\draw[ultra thick, cyan] (HellFireForge) -- (FoCUSt);
+\draw[ultra thick, cyan] (IsleOfMuu) -- (Lavatown);
+\draw[ultra thick, cyan] (IsleOfMuuSt) -- (LothendalManor);
+\draw[ultra thick, cyan] (PortDahl) -- (LothendalManor);
+\draw[ultra thick, cyan] (PortDahl) -- (RavinesStadium);
+\draw[ultra thick, cyan] (RavinesStadium) -- (RavinesOverlook);
+\draw[ultra thick, cyan] (PortDahlSt) -- (RavinesOverlook);
+\draw[ultra thick, cyan] (PortDahlSt) -- (PortDahl);
+
+
+\draw[ultra thick, orange] (Nazca) -- (FoCUSt);
+\draw[ultra thick, orange] (FoCUSt) -- (SigmaCastle);
+\draw[ultra thick, orange] (EmucraftCitySt) -- (CastleCity);
+\draw[ultra thick, orange] (DeltaCitySt) -- (DeltaArroyo);
+\draw[ultra thick, orange] (DeltaArroyo) -- (Arroyo);
+\draw[ultra thick, orange] (DeltaArroyo) -- (DeltaCity);
+\draw[ultra thick, orange] (JimmyVille) -- (JimmyVilleSt);
+\draw[ultra thick, orange] (NewArcton) -- (NewArctonSt);
+
+\draw[ultra thick, orange] (MyceliaSt2) -- (MyceliaSt);
+\draw[ultra thick, orange] (MyceliaSt1) -- (MyceliaSt2);
+\draw[ultra thick, orange] (MyceliaSt) -- (Mycelia);
+\draw[ultra thick, cyan] (Mycelia) -- (MyceliaNovum1);
+\draw[ultra thick, cyan] (MyceliaNovum1) -- (MyceliaNovum2);
+\draw[ultra thick, cyan] (MyceliaNovum2) -- (NovumCulta);
+\draw[ultra thick, orange] (Monkokoro) -- (MonkokoroSt);
+
+
+
+    %%% Occidental
+\draw[ultra thick, teal] (Spawn)  -- (GoldenJunction);
+%\draw[ultra thick, teal] (GoldenJunction)  -- (s1);
+%\draw[ultra thick, teal] (Annasforest)  -- (s1);
+\draw[ultra thick, teal] (Annasforest)  -- (GoldenJunction);
+\draw[ultra thick, teal] (Annasforest)  -- (endoflineOcc);
+
+\draw[ultra thick, teal] (ForestbergSt) -- (SkylineSt);
+\draw[ultra thick, cyan] (SkylineSt) -- (MonopleVille);
+\draw[white, fill=white] (NewLandsSkyMonopleCross) circle (0.1);
+
+
+
+\draw[ultra thick, cyan] (Skyline) -- (NewLandsSky);
+\draw[ultra thick, cyan] (NewLands) -- (NewLandsSky);
+
+
+\draw[ultra thick, teal] (Skyline) -- (SkylineSt);
+\draw[ultra thick, teal] (Fortree) -- (FortreeSt);
+\draw[ultra thick, cyan] (FortreeNLSt) -- (Fortree);
+
+\draw[ultra thick, cyan] (FortreeNLSt) -- (FortreeNLSt2);
+\draw[ultra thick, cyan] (NewLands) -- (FortreeNLSt2);
+\draw[very thick, cyan] (Monople) -- (FortreeNLSt2);
+\draw[very thick, cyan, dotted] (Monople) -- (KuraiCho);
+\draw[ultra thick, cyan] (FortreeSt) -- (DawnPark);
+\draw[ultra thick, cyan] (Forestberg) -- (DawnPark);
+\draw[ultra thick, teal] (Forestberg) -- (ForestbergSt2);
+
+\draw[ultra thick, teal] (ThreeBiomesSt) -- (GreenAcres);
+\draw[ultra thick, teal] (NexusSE2St) -- (NexusSE2);
+\draw[ultra thick, teal] (ThreeBiomes) -- (NexusSE2);
+\draw[ultra thick, cyan] (ThreeBiomesSt2) -- (Skyline);
+\draw[ultra thick, cyan] (ThreeBiomesSt2) -- (ThreeBiomes);
+\draw[ultra thick, cyan] (Mystria) -- (MystriaSt);
+
+\draw[ultra thick, cyan, dotted] (NovumCulta) -- (LittleAmerica);
+\draw[ultra thick, teal] (TeslaTown) -- (TeslaTownSt);
+\draw[ultra thick, teal] (Jordan) -- (JordanSt);
+\draw[ultra thick, teal] (Westwood) -- (WestwoodSt);
+\draw[very thick, teal] (Kryptopia) -- (KryptopiaSt);
+\draw[ultra thick, teal] (GranSyreSt) -- (GranSyre);
+
+\draw[ultra thick, cyan] (GoldenJunction) -- (AcaciaRoadsInt);
+\draw[ultra thick, cyan] (AcaciaRoadsInt) -- (NewEdenBranch);
+\draw[ultra thick, cyan] (AcaciaRoads) -- (AcaciaRoadsSt);
+\draw[ultra thick, cyan] (NewEden) -- (NewEdenBranch);
+\draw[ultra thick, cyan] (AcaciaGladeSouth) -- (NewEdenBranch);
+\draw[ultra thick, red] (AcaciaGladeSouth) -- (MountNyan);
+\draw[ultra thick, blue] (AcaciaRoadsInt) -- (AlunVillage);
+\draw[ultra thick, blue] (PonnVillage) -- (AlunVillage);
+\draw[ultra thick, blue] (PonnVillage) -- (SandStoneTower);
+\draw[ultra thick, blue] (AcaciaGlade) -- (SandStoneTower);
+\draw[ultra thick, cyan] (AcaciaGladeSouth) -- (NewEdenBranch);
+\draw[ultra thick, cyan] (AcaciaGladeSouth) -- (OldSouthBorder);
+\draw[ultra thick, cyan] (FRSSouthHub) -- (FRSSouth);
+
+%\draw[thick, green] (NexusSE2) -- (GreenAcres);
+\draw[ultra thick, red] (WizardHomeSt) -- (MountNyan);
+\draw[ultra thick, teal,dotted] (DragonRiverPeakSt) -- (DownTown);
+\draw[ultra thick, teal] (DownTown) -- (FrtB);
+
+\draw[ultra thick, cyan] (NexusE) -- (RigCityStN);
+\draw[ultra thick, cyan] (RigCityStN) -- (NexusESt);
+\draw[ultra thick, cyan] (Glenfiddich) -- (NexusESt);
+\draw[white, fill=white] (RigCityStN) circle (0.1);
+
+
+\draw[ultra thick, teal] (RigCity) -- (RigCitySt);
+\draw[ultra thick, teal] (CobJob) -- (CobJobSt);
+\draw[very thick, teal] (BoxAlpha) -- (BoxAlphaSt);
+
+\draw[ultra thick, cyan] (Ravenstown) -- (CosmicCitySt);
+\draw[ultra thick, cyan] (Autumnwood) -- (CosmicCitySt);
+
+
+    %%% Great Northern
+\draw[ultra thick, lightgray] (Spawn) -- (OldWestBorder);
+\draw[ultra thick, lightgray] (CasaAustria) -- (CasaAustriaSt);
+\draw[ultra thick, lightgray] (CentralNexus) -- (CentralNexusSt);
+\draw[ultra thick, lightgray] (Melonopolis) -- (MelonopolisSt);
+\draw[ultra thick, lightgray] (DiamondMall) -- (DiamondMallSt);
+	\draw[ultra thick, cyan] (ForbiddenOutpost) -- (PortDomes);
+	\draw[ultra thick, cyan] (ForbiddenOutpostSt) -- (NewVeniceSt);
+	\draw[ultra thick, cyan] (NewVenice) -- (NewVeniceSt);
+	\draw[ultra thick, cyan] (NexusWest) -- (PortDomes);
+\draw[ultra thick, lightgray] (Dragonshold) -- (DragonsholdSt);
+\draw[ultra thick, lightgray] (FloataniaSt) -- (Rasuka);
+\draw[ultra thick, lightgray] (YObernai) -- (Obernai);
+	\draw[ultra thick, cyan] (NorthNoobIsland) -- (Obernai);
+
+
+\draw[ultra thick, gray] (Underworld) -- (UnderworldSt);
+\draw[ultra thick, gray] (DrumCity) -- (UnderworldSt);
+
+
+
+
+
+
+%\node[rotate=45,anchor=west] at (Spawn) {Spawn Central Station};
+%\draw[fill=white] (Spawn) circle (0.1);
+%\draw[fill=white] ($(Spawn) + (0,-0.1)$) circle (0.03);
+%Repeated at the end --> top layer
+
+
+%%%%%%%%%%%%
+%Node Names%
+%%%%%%%%%%%%
+
+%%% RED WARP
+%%% VIOLET NEXUS
+
+
+    %%%Oriental
+\node[rotate=45,anchor=west] at (TowerStation) {TowerStation};
+\draw[fill=white] (TowerStation) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Residaemian) {\ Residaemian};
+\draw[fill=red] (Residaemian) circle (0.15);
+\draw[fill=white] (Residaemian) circle (0.07);
+
+\node[rotate=45,anchor=west] at (PortLast) {PortLast};
+\draw[fill=white] (PortLast) circle (0.05);
+
+\node[rotate=45,anchor=west] at (HillValley) {\ HillValley};
+\draw[fill=red] (HillValley) circle (0.15);
+\draw[fill=white] (HillValley) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Batugus) {\ Batugus};
+\draw[fill=violet] (Batugus) circle (0.15);
+\draw[fill=white] (Batugus) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Pokethedral) {Pokethedral};
+\draw[fill=white] (Pokethedral) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Epicaria) {Epicaria};
+\draw[fill=white] (Epicaria) circle (0.05);
+
+\node[rotate=45,anchor=west] at (StromIsle) {\ StromIsle};
+\draw[fill=red] (StromIsle) circle (0.15);
+\draw[fill=white] (StromIsle) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Ocean) {Ocean};
+\draw[fill=white] (Ocean) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Lumen) {\ Lumen};
+\draw[fill=white] (Lumen) circle (0.05);
+
+\node[rotate=45,anchor=west] at (NoseFish) {\ Nosefish};
+\draw[fill=white] (NoseFish) circle (0.05);
+
+\node[rotate=45,anchor=west] at (HellView) {\ HellView};
+\draw[fill=white] (HellView) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Plummet) {Plummet};
+\draw[fill=white] (Plummet) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Gamecity) {Gamecity};
+\draw[fill=white] (Gamecity) circle (0.05);
+
+\node[rotate=45,anchor=west] at (EireMall) {EireMall};
+\draw[fill=white] (EireMall) circle (0.05);
+
+\node[rotate=45,anchor=west] at (NexusN3) {\ NexusN3};
+\draw[fill=violet] (NexusN3) circle (0.15);
+\draw[fill=white] (NexusN3) circle (0.07);
+
+\node[rotate=45,anchor=west] at (EastAustania) {EastAustania};
+\draw[fill=white] (EastAustania) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Wiexbaux) {Wiexbaux};
+\draw[fill=white] (Wiexbaux) circle (0.05);
+
+\node[rotate=45,anchor=west] at (StatuePark) {StatuePark};
+\draw[fill=white] (StatuePark) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Townbuildthing) {\href{}{\ Townbuildthing}};
+\draw[fill=violet] (Townbuildthing) circle (0.15);
+\draw[fill=white] (Townbuildthing) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Twinlakes) {\ Twinlakes};
+\draw[fill=white] (Twinlakes) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Pandaville) {\ Pandaville};
+\draw[fill=white] (Pandaville) circle (0.05);
+
+\node[rotate=45,anchor=west] at (OrientalGatewayStation) {\ OrientalGatewayStation};
+\draw[fill=white] (OrientalGatewayStation) circle (0.05);
+
+
+\node[rotate=45,anchor=west] at (Emrys) {\ EmrysStation};
+\draw[fill=white] (Emrys) circle (0.05);
+\node[rotate=45,anchor=west] at (MockingStation) {\ MockingStation};
+\draw[fill=white] (MockingStation) circle (0.05);
+\node[rotate=45,anchor=west] at (LedgerPointStation) {\ LedgerPointStation};
+\draw[fill=white] (LedgerPointStation) circle (0.05);
+\node[rotate=45,anchor=west] at (AnnaStation) {\ AnnaStation};
+\draw[fill=white] (AnnaStation) circle (0.05);
+\node[rotate=45,anchor=west] at (HorizonPeaks) {\ HorizonPeaks};
+\draw[fill=white] (HorizonPeaks) circle (0.05);
+\node[rotate=45,anchor=west] at (SnakyStation) {\ SnakyStation};
+\draw[fill=white] (SnakyStation) circle (0.05);
+\node[rotate=45,anchor=west] at (AirStation) {\ AirStation};
+\draw[fill=white] (AirStation) circle (0.05);
+\node[rotate=45,anchor=west] at (SkyLab) {\ SkyLab};
+\draw[fill=white] (SkyLab) circle (0.05);
+\node[rotate=45,anchor=west] at (PhoenixPort) {\ PhoenixPort};
+\draw[fill=white] (PhoenixPort) circle (0.05);
+\node[rotate=45,anchor=west] at (EclipseBankStation) {\ EclipseBankStation};
+\draw[fill=white] (EclipseBankStation) circle (0.05);
+\node[rotate=45,anchor=west] at (AngardStation) {\ AngardStation};
+\draw[fill=white] (AngardStation) circle (0.05);
+\node[rotate=45,anchor=west] at (PhoenixStadium) {\ PhoenixStadium};
+\draw[fill=white] (PhoenixStadium) circle (0.05);
+\node[rotate=45,anchor=west] at (FlameStation) {\ FlameStation};
+\draw[fill=white] (FlameStation) circle (0.05);
+\node[rotate=45,anchor=west] at (Socorro) {\ Socorro};
+\draw[fill=violet] (Socorro) circle (0.15);
+\draw[fill=white] (Socorro) circle (0.07);
+\node[rotate=45,anchor=west] at (PhoenixPark) {\ PhoenixPark};
+\draw[fill=white] (PhoenixPark) circle (0.05);
+\node[rotate=45,anchor=west] at (PhoenixTrainStation) {\ PhoenixTrainStation};
+\draw[fill=white] (PhoenixTrainStation) circle (0.05);	
+\node[rotate=45,anchor=west] at (TbtDesert) {\ TbtDesert};
+\draw[fill=white] (TbtDesert) circle (0.05);	
+\node[rotate=45,anchor=west] at (NewSnaktown) {\ NewSnaktown};
+\draw[fill=violet] (NewSnaktown) circle (0.15);
+\draw[fill=white] (NewSnaktown) circle (0.07);
+\node[rotate=45,anchor=west] at (Colllumns) {\ Colllumns};
+\draw[fill=white] (Colllumns) circle (0.05);	
+\node[rotate=45,anchor=west] at (HedgeMaze) {\ HedgeMaze};
+\draw[fill=violet] (HedgeMaze) circle (0.15);
+\draw[fill=white] (HedgeMaze) circle (0.07);
+\node[rotate=45,anchor=west] at (Forrrest) {\ Forrrest};
+\draw[fill=red] (Forrrest) circle (0.15);
+\draw[fill=white] (Forrrest) circle (0.07);
+\node[rotate=45,anchor=west] at (NorthNoobIsland) {\ NorthNoobIsland};
+\draw[fill=white] (NorthNoobIsland) circle (0.05);	
+\node[rotate=45,anchor=west] at (SkyVillage) {\ SkyVillage};
+\draw[fill=white] (SkyVillage) circle (0.05);
+\node[rotate=45,anchor=west] at (Modos) {\ Modos};
+\draw[fill=violet] (Modos) circle (0.15);
+\draw[fill=white] (Modos) circle (0.07);
+\node[rotate=45,anchor=west] at (RubeGoldbergCompetition) {\ RubeGoldbergCompetition};
+\draw[fill=white] (RubeGoldbergCompetition) circle (0.05);
+\node[rotate=45,anchor=west] at (Samerator) {\ Samerator};
+\draw[fill=white] (Samerator) circle (0.05);
+\node[rotate=45,anchor=west] at (NewHavenM) {\ NewHavenLocal};
+\draw[fill=white] (NewHavenM) circle (0.05);
+\node[rotate=45,anchor=west] at (SanFreedoniaM) {\ SanFreedonia};
+\draw[fill=white] (SanFreedoniaM) circle (0.05);
+\node[rotate=45,anchor=west] at (HorseRaces) {\ HorseRaces};
+\draw[fill=white] (HorseRaces) circle (0.05);
+\node[rotate=45,anchor=west] at (Gabilzaharn) {\ Gabilzaharn};
+\draw[fill=white] (Gabilzaharn) circle (0.05);
+\node[rotate=45,anchor=west] at (NewKrona) {\ NewKrona};
+\draw[fill=white] (NewKrona) circle (0.05);
+\node[rotate=45,anchor=west] at (JensenResort) {\ JensenResort};
+\draw[fill=white] (JensenResort) circle (0.05);
+\node[rotate=45,anchor=west] at (Nari1102) {\ Nari1102};
+\draw[fill=white] (Nari1102) circle (0.05);
+
+\node[rotate=45,anchor=west] at (MiningDepot) {\ MiningDepot};
+\draw[fill=white] (MiningDepot) circle (0.05);
+\node[rotate=45,anchor=west] at (ExtremeHills) {\ ExtremeHills};
+\draw[fill=white] (ExtremeHills) circle (0.05);
+\node[rotate=45,anchor=west] at (MidwayJunction) {\ MidwayJunction};
+\draw[fill=white] (MidwayJunction) circle (0.05);
+\node[rotate=45,anchor=west] at (HuStation) {\ HuStation};
+\draw[fill=white] (HuStation) circle (0.05);
+
+
+
+
+
+
+
+
+
+\node[rotate=45,anchor=west] at (WBMCo) {\ WBMCo};
+\draw[fill=white] (WBMCo) circle (0.05);
+
+\node[rotate=45,anchor=west] at (NewHaven) {\ NewHaven};
+\draw[fill=red] (NewHaven) circle (0.15);
+\draw[fill=white] (NewHaven) circle (0.07);
+
+\node[rotate=45,anchor=west] at (NorthOfNowhere) {\ NorthOfNowhere};
+\draw[fill=violet] (NorthOfNowhere) circle (0.15);
+\draw[fill=white] (NorthOfNowhere) circle (0.07);
+    
+    %%% LAVATOWN
+\node[rotate=45,anchor=west] at (BatugusLabs) {\href{}{\ BatugusLabs}};
+\draw[fill=white] (BatugusLabs) circle (0.05);
+
+\node[rotate=45,anchor=west] at (NewAtlanta) {\href{}{\ NewAtlanta}};
+\draw[fill=white] (NewAtlanta) circle (0.05);
+
+\node[rotate=45,anchor=west] at (GothamCity) {\href{}{\ GothamCity}};
+\draw[fill=white] (GothamCity) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Xenotopia) {\href{}{\ Xenotopia}};
+\draw[fill=white] (Xenotopia) circle (0.05);
+
+\node[rotate=45,anchor=west] at (SandIsland) {\href{}{\ SandIsland}};
+\draw[fill=violet] (SandIsland) circle (0.15);
+\draw[fill=white] (SandIsland) circle (0.07);
+	\node[rotate=45,anchor=west] at (HalfMoonVale) {\href{}{HalfMoonVale}};
+	\draw[fill=white] (HalfMoonVale) circle (0.05);
+	\node[rotate=45,anchor=west] at (KuraiCho) {\href{}{\ KuraiCho}};
+	\draw[fill=violet] (KuraiCho) circle (0.15);
+	\draw[fill=white] (KuraiCho) circle (0.07);
+
+\node[rotate=45,anchor=west] at (NewLands) {\ NewLands};
+\draw[fill=red] (NewLands) circle (0.15);
+\draw[fill=white] (NewLands) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Nazca) {\href{}{\ Nazca}};
+\draw[fill=white] (Nazca) circle (0.05);
+	\node[rotate=45,anchor=west] at (FoCU) {\href{}{FoCU}};
+	\draw[fill=white] (FoCU) circle (0.05);
+	\node[rotate=45,anchor=west] at (SigmaCastle) {\href{}{SigmaCastle}};
+	\draw[fill=white] (SigmaCastle) circle (0.05);
+	\node[rotate=45,anchor=west] at (HellFireForge) {\ HellFireForge};
+	\draw[fill=red] (HellFireForge) circle (0.15);
+	\draw[fill=white] (HellFireForge) circle (0.07);
+
+\node[rotate=45,anchor=west] at (RtkweIsland) {\href{}{\ RtkweIsland}};
+\draw[fill=white] (RtkweIsland) circle (0.05);
+
+\node[rotate=45,anchor=west] at (ZeldaMap) {\href{}{\ ZeldaMap}};
+\draw[fill=white] (ZeldaMap) circle (0.05);
+
+\node[rotate=45,anchor=west] at (EmucraftCity) {\href{}{\ EmucraftCity}};
+\draw[fill=white] (EmucraftCity) circle (0.05);
+	\node[rotate=45,anchor=west] at (CastleCity) {\href{}{\ CastleCity}};
+	\draw[fill=white] (CastleCity) circle (0.15);
+	\draw[fill=white] (CastleCity) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Lavatown) {\href{}{\ Lavatown}};
+\draw[fill=violet] (Lavatown) circle (0.15);
+\draw[fill=white] (Lavatown) circle (0.07);
+	\node[rotate=45,anchor=west] at (IsleOfMuu) {\href{}{\ IsleOfMuu}};
+	\draw[fill=white] (IsleOfMuu) circle (0.05);
+
+	\node[rotate=45,anchor=west] at (LothendalManor) {\href{}{\ LothendalManor}};
+	\draw[fill=white] (LothendalManor) circle (0.05);
+	\node[rotate=45,anchor=west] at (PortDahl) {\href{}{\ PortDahl}};
+	\draw[fill=white] (PortDahl) circle (0.05);
+	\node[rotate=45,anchor=west] at (HotelRecluse) {\href{}{\ HotelRecluse}};
+	\draw[fill=white] (HotelRecluse) circle (0.05);
+	\node[rotate=45,anchor=west] at (LothendalCo) {\href{}{\ LothendalCo}};
+	\draw[fill=white] (LothendalCo) circle (0.05);
+	\node[rotate=45,anchor=west] at (RavinesStadium) {\href{}{\ RavinesStadium}};
+	\draw[fill=white] (RavinesStadium) circle (0.05);
+	\node[rotate=45,anchor=west] at (RavinesOverlook) {\href{}{\ RavinesOverlook}};
+	\draw[fill=white] (RavinesOverlook) circle (0.05);
+
+\node[rotate=45,anchor=west] at (NexusE1) {\href{}{\ NexusE1}};
+\draw[fill=white] (NexusE1) circle (0.05);
+
+\node[rotate=45,anchor=west] at (DeltaCity) {\href{}{\ DeltaCity}};
+\draw[fill=white] (DeltaCity) circle (0.05);
+	\node[rotate=45,anchor=west] at (Arroyo) {\href{}{Arroyo}};
+	\draw[fill=white] (Arroyo) circle (0.05);
+
+\node[rotate=45,anchor=west] at (JimmyVille) {\href{}{\ Jimmyville}};
+\draw[fill=red] (JimmyVille) circle (0.15);
+\draw[fill=white] (JimmyVille) circle (0.07);
+
+\node[rotate=45,anchor=west] at (NewArcton) {\href{}{\ NewArcton}};
+\draw[fill=white] (NewArcton) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Jannerville) {\href{}{\ Jannerville}};
+\draw[fill=white] (Jannerville) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Borderlands) {\href{}{\ Borderlands}};
+\draw[fill=white] (Borderlands) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Mycelia) {\href{}{\ Mycelia}};
+\draw[fill=red] (Mycelia) circle (0.15);
+\draw[fill=white] (Mycelia) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Monkokoro) {\href{}{\ Monkokoro}};
+\draw[fill=white] (Monkokoro) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Newcuntington) {\href{}{\ Newcuntington}};
+\draw[fill=violet] (Newcuntington) circle (0.15);
+\draw[fill=white] (Newcuntington) circle (0.07);
+
+
+    %%% OCCIDENTAL (ZUID)
+\node[rotate=45,anchor=west] at (Catville) {Catville};
+\draw[fill=white] (Catville) circle (0.05);
+
+\node[rotate=45,anchor=west] at (DrumCity) {\ DrumCity};
+\draw[fill=red] (DrumCity) circle (0.15);
+\draw[fill=white] (DrumCity) circle (0.07);
+
+\node[rotate=45,anchor=west] at (DialRepublic) {DialRepublic};
+\draw[fill=white] (DialRepublic) circle (0.05);
+
+\node[rotate=45,anchor=west] at (CobJob) {CobJob};
+\draw[fill=white] (CobJob) circle (0.05);
+
+\node[rotate=45,anchor=west] at (RigCity) {RigCity};
+\draw[fill=white] (RigCity) circle (0.05);
+
+\node[rotate=45,anchor=west] at (BoxAlpha) {BoxAlpha};
+\draw[fill=white] (BoxAlpha) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Glenfiddich) {\ Glenfiddich};
+\draw[fill=red] (Glenfiddich) circle (0.15);
+\draw[fill=white] (Glenfiddich) circle (0.07);
+
+\node[rotate=45,anchor=west] at (NexusE) {\ NexusEast};
+\draw[fill=violet] (NexusE) circle (0.15);
+\draw[fill=white] (NexusE) circle (0.07);
+
+\node[rotate=45,anchor=west] at (CosmicCity) {\ CosmicCity};
+\draw[fill=violet] (CosmicCity) circle (0.15);
+\draw[fill=white] (CosmicCity) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Autumnwood) {\ Autumnwood};
+\draw[fill=red] (Autumnwood) circle (0.15);
+\draw[fill=white] (Autumnwood) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Ravenstown) {\ Ravenstown};
+\draw[fill=white] (Ravenstown) circle (0.15);
+\draw[fill=white] (Ravenstown) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Forestberg) {\ Forestberg};
+\draw[fill=white] (Forestberg) circle (0.15);
+\draw[fill=white] (Forestberg) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Fortree) {\href{}{\ Fortree}};
+\draw[fill=white] (Fortree) circle (0.15);
+\draw[fill=white] (Fortree) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Farm) {\ Farm};
+\draw[fill=white] (Farm) circle (0.05);
+\node[rotate=45,anchor=west] at (Mart) {\ Mart};
+\draw[fill=white] (Mart) circle (0.05);
+\node[rotate=45,anchor=west] at (Zombie) {\ Zombie};
+\draw[fill=white] (Zombie) circle (0.05);
+\node[rotate=45,anchor=west] at (CommunityCastle) {\ CommunityCastle};
+\draw[fill=white] (CommunityCastle) circle (0.05);
+\node[rotate=45,anchor=west] at (Monople) {\ Monople};
+\draw[fill=white] (Monople) circle (0.05);
+\node[rotate=45,anchor=west] at (DawnPark) {\ DawnPark};
+\draw[fill=white] (DawnPark) circle (0.05);
+\node[rotate=45,anchor=west] at (Residential) {\ Residential};
+\draw[fill=white] (Residential) circle (0.05);
+\node[rotate=45,anchor=west] at (Suburbs) {\ Suburbs};
+\draw[fill=white] (Suburbs) circle (0.05);
+\node[rotate=45,anchor=west] at (MonopleVille) {\ MonopleVille};
+\draw[fill=white] (MonopleVille) circle (0.05);
+
+
+\node[rotate=45,anchor=west] at (Skyline) {\ Skyline};
+\draw[fill=red] (Skyline) circle (0.15);
+\draw[fill=white] (Skyline) circle (0.07);
+
+\node[rotate=45,anchor=west] at (NovumCulta) {\ NovumCulta};
+\draw[fill=red] (NovumCulta) circle (0.15);
+\draw[fill=white] (NovumCulta) circle (0.07);
+
+
+\node[rotate=45,anchor=west] at (Xanderstrike) {Xanderstrike};
+\draw[fill=white] (Xanderstrike) circle (0.05);
+
+\node[rotate=45,anchor=west] at (ThreeBiomes) {ThreeBiomes};
+\draw[fill=white] (ThreeBiomes) circle (0.05);
+
+\node[rotate=45,anchor=west] at (NexusSE2) {\ NexusSE2};
+\draw[fill=violet] (NexusSE2) circle (0.15);
+\draw[fill=white] (NexusSE2) circle (0.07);
+
+\node[rotate=45,anchor=west] at (LittleAmerica) {LittleAmerica};
+\draw[fill=white] (LittleAmerica) circle (0.05);
+
+\node[rotate=45,anchor=west] at (GreenAcres) {\ GreenAcres};
+\draw[fill=violet] (GreenAcres) circle (0.15);
+\draw[fill=white] (GreenAcres) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Mystria) {\ Mystria};
+\draw[fill=white] (Mystria) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Newwood) {\ Newwood};
+\draw[fill=violet] (Newwood) circle (0.15);
+\draw[fill=white] (Newwood) circle (0.07);
+
+\node[rotate=45,anchor=west] at (TeslaTown) {\ TeslaTown};
+\draw[fill=white] (TeslaTown) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Jordan) {\ Jordan};
+\draw[fill=white] (Jordan) circle (0.05);
+
+\node[rotate=45,anchor=west] at (NexusS1) {\ NexusS1};
+\draw[fill=violet] (NexusS1) circle (0.15);
+\draw[fill=white] (NexusS1) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Westwood) {\ Westwood};
+\draw[fill=red] (Westwood) circle (0.15);
+\draw[fill=white] (Westwood) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Mushieville) {Mushieville};
+\draw[fill=white] (Mushieville) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Kryptopia) {Kryptopia};
+\draw[fill=white] (Kryptopia) circle (0.05);
+
+\node[rotate=45,anchor=west] at (GoldenJunction) {\ GoldenJunction};
+\draw[fill=violet] (GoldenJunction) circle (0.15);
+\draw[fill=white] (GoldenJunction) circle (0.07);
+	\node[rotate=45,anchor=west] at (MiniAvalon) {\ MiniAvalon};
+	\draw[fill=white] (MiniAvalon) circle (0.05);
+	\node[rotate=45,anchor=west] at (NewDublin) {\ NewDublin};
+	\draw[fill=violet] (NewDublin) circle (0.15);
+	\draw[fill=white] (NewDublin) circle (0.07);
+	\node[rotate=45,anchor=west] at (WitchFarm) {\ WitchFarm};
+	\draw[fill=white] (WitchFarm) circle (0.05);
+	\node[rotate=45,anchor=west] at (AcaciaRoadsInt) {\ AcaciaRoadsInt};
+	\draw[fill=white] (AcaciaRoadsInt) circle (0.15);
+	\draw[fill=white] (AcaciaRoadsInt) circle (0.07);
+
+
+	\node[rotate=45,anchor=west] at (AcaciaRoads) {\ AcaciaRoads};
+	\draw[fill=violet] (AcaciaRoads) circle (0.15);
+	\draw[fill=white] (AcaciaRoads) circle (0.07);
+	
+	\node[rotate=45,anchor=west] at (AlSanara) {\ AlSanara};
+	\draw[fill=white] (AlSanara) circle (0.05);
+	\node[rotate=45,anchor=west] at (SilverBullet) {\ SilverBullet};
+	\draw[fill=white] (SilverBullet) circle (0.05);
+	\node[rotate=45,anchor=west] at (SunriseHotel) {\ SunriseHotel};
+	\draw[fill=white] (SunriseHotel) circle (0.05);
+	\node[rotate=45,anchor=west] at (NewEden) {\ NewEden};
+	\draw[fill=violet] (NewEden) circle (0.15);
+	\draw[fill=white] (NewEden) circle (0.07);
+	\node[rotate=45,anchor=west] at (AcaciaGlade) {\ AcaciaGlade};
+	\draw[fill=white] (AcaciaGlade) circle (0.05);
+	\node[rotate=45,anchor=west] at (AcaciaGladeSouth) {\ AcaciaGladeSouth};
+	\draw[fill=white] (AcaciaGladeSouth) circle (0.05);
+	\node[rotate=45,anchor=west] at (AlunVillage) {\ AlunVillage};
+	\draw[fill=white] (AlunVillage) circle (0.05);
+	\node[rotate=45,anchor=west] at (LostTemple) {\ LostTemple};
+	\draw[fill=white] (LostTemple) circle (0.05);
+	\node[rotate=45,anchor=west] at (PonnVillage) {\ PonnVillage};
+	\draw[fill=white] (PonnVillage) circle (0.05);
+	\node[rotate=45,anchor=west] at (SandStoneTower) {\ SandStoneTower};
+	\draw[fill=white] (SandStoneTower) circle (0.05);
+	\node[rotate=45,anchor=west] at (FourthBay) {\ FourthBay};
+	\draw[fill=white] (FourthBay) circle (0.05);
+	\node[rotate=45,anchor=west] at (NovaTown) {\ NovaTown};
+	\draw[fill=violet] (NovaTown) circle (0.15);
+	\draw[fill=white] (NovaTown) circle (0.07);
+	\node[rotate=45,anchor=west] at (NewLouisville) {\ NewLouisville};
+	\draw[fill=violet] (NewLouisville) circle (0.15);
+	\draw[fill=white] (NewLouisville) circle (0.07);
+	\node[rotate=45,anchor=west] at (NewLouisvilleCitySq) {\ NewLouisvilleCitySq};
+	\draw[fill=white] (NewLouisvilleCitySq) circle (0.05);
+	\node[rotate=45,anchor=west] at (FRSSouthHub) {\ FRSSouthHub};
+	\draw[fill=violet] (FRSSouthHub) circle (0.15);
+	\draw[fill=white] (FRSSouthHub) circle (0.07);
+	\node[rotate=45,anchor=west] at (EllandriaHwy) {\ EllandriaHwy};
+	\draw[fill=white] (EllandriaHwy) circle (0.05);
+	\node[rotate=45,anchor=west] at (OldSouthBorder) {\ OldSouthBorder};
+	\draw[fill=white] (OldSouthBorder) circle (0.05);
+
+
+
+
+
+
+
+\node[rotate=45,anchor=west] at (Annasforest) {\ AnnasForest};
+\draw[fill=white] (Annasforest) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Frostagon) {\ Frostagon};
+\draw[fill=white] (Frostagon) circle (0.05);
+
+\node[rotate=45,anchor=west] at (WizardHome) {\ WizardHome};
+\draw[fill=white] (WizardHome) circle (0.05);
+
+\node[rotate=45,anchor=west] at (ExplorersIsland) {\ ExpIsland};
+\draw[fill=white] (ExplorersIsland) circle (0.05);
+
+\node[rotate=45,anchor=west] at (MountNyan) {\ MountNyan};
+\draw[fill=violet] (MountNyan) circle (0.15);
+\draw[fill=white] (MountNyan) circle (0.07);
+
+
+\node[rotate=45,anchor=west] at (GranSyre) {\ GranSyre};
+\draw[fill=violet] (GranSyre) circle (0.15);
+\draw[fill=white] (GranSyre) circle (0.07);
+
+\node[rotate=45,anchor=west] at (DownTown) {\ DownTown};
+\draw[fill=white] (DownTown) circle (0.05);
+
+\node[rotate=45,anchor=west] at (AnnaB) {\ AnnaBusiness};
+\draw[fill=white] (AnnaB) circle (0.05);
+
+\node[rotate=45,anchor=west] at (AirpP) {\ AirportPlaza};
+\draw[fill=white] (AirpP) circle (0.05);
+
+\node[rotate=45,anchor=west] at (FrtB) {\ FortBoone};
+\draw[fill=white] (FrtB) circle (0.05);
+
+
+\node[rotate=45,anchor=west] at (BowbyIsland) {BowbyIsland};
+\draw[fill=white] (BowbyIsland) circle (0.05);
+
+    %%% GREAT NORTHERN
+
+\node[rotate=45,anchor=west] at (Underworld) {\href{http://minecraftonline.com/wiki/Underworld}{\ Underworld}};
+\draw[fill=red] (Underworld) circle (0.15);
+\draw[fill=white] (Underworld) circle (0.07);
+
+\node[rotate=45,anchor=west] at (StoneBurrow) {\href{http://minecraftonline.com/wiki/Stone_burrow}{StoneBurrow}}; \draw[fill=white] (StoneBurrow) circle (0.05);
+
+\node[rotate=45,anchor=west] at (CentralNexus) {\href{http://minecraftonline.com/wiki/Project_Anubis#Central_Nexus}{\ CentralNexus}}; 
+\draw[fill=violet] (CentralNexus) circle (0.15);
+\draw[fill=white] (CentralNexus) circle (0.07);
+
+\node[rotate=45,anchor=west] at (CasaAustria) {\href{http://minecraftonline.com/wiki/Casa_de_Austria}{CasaAustria}}; \draw[fill=white] (CasaAustria) circle (0.05);
+\node[rotate=45,anchor=west] at (ShoreTown) {\href{http://minecraftonline.com/wiki/Shoretown}{\ ShoreTown}}; \draw[fill=white] (ShoreTown) circle (0.05);
+\node[rotate=45,anchor=west] at (Melonopolis) {\href{http://minecraftonline.com/wiki/Melonopolis}{\ Melonopolis}}; \draw[fill=white] (Melonopolis) circle (0.05);
+\node[rotate=45,anchor=west] at (Logdon) {\href{http://minecraftonline.com/wiki/Logdon}{\ Logdon}}; \draw[fill=white] (Logdon) circle (0.05);
+
+\node[rotate=45,anchor=west] at (DiamondMall) {\href{http://minecraftonline.com/wiki/One_Diamond_Plaza}{\ DiamondMall}};
+\draw[fill=red] (DiamondMall) circle (0.15);
+\draw[fill=white] (DiamondMall) circle (0.07);
+
+\node[rotate=45,anchor=west] at (JoppaLine) {\href{}{\ JoppaLine}};
+\draw[fill=white] (JoppaLine) circle (0.05);
+
+\node[rotate=45,anchor=west] at (ForbiddenOutpost) {\href{http://minecraftonline.com/wiki/Forbidden_Outpost}{\ ForbiddenOutpost}};
+\draw[fill=red] (ForbiddenOutpost) circle (0.15);
+\draw[fill=white] (ForbiddenOutpost) circle (0.07);
+
+	\node[rotate=45,anchor=east] at (PortDomes) {\href{}{\ PortDomes}};
+	\draw[fill=white] (PortDomes) circle (0.05);
+
+	\node[rotate=45,anchor=west] at (PortDomesCastle) {\href{}{\ PortDomesCastle}};
+	\draw[fill=white] (PortDomesCastle) circle (0.05);
+	
+	\node[rotate=45,anchor=west] at (NexusWest) {\href{}{\ NexusWest}};
+	\draw[fill=violet] (NexusWest) circle (0.15);
+	\draw[fill=white] (NexusWest) circle (0.07);
+	
+	\node[rotate=45,anchor=west] at (NewVenice) {\href{}{\ NewVenice}};
+	\draw[fill=red] (NewVenice) circle (0.15);
+	\draw[fill=white] (NewVenice) circle (0.07);
+
+
+	
+\node[rotate=45,anchor=west] at (CBookMuseum) {\href{http://minecraftonline.com/wiki/Craftbook_Museum}{\ CBookMuseum}};
+\draw[fill=white] (CBookMuseum) circle (0.05);
+
+\node[rotate=45,anchor=west] at (AmpCity) {\href{http://minecraftonline.com/wiki/Amp_City}{\ AmpCity}}; 
+\draw[fill=red] (AmpCity) circle (0.15);
+\draw[fill=white] (AmpCity) circle (0.07);
+
+\node[rotate=45,anchor=west] at (Dragonshold) {\href{http://minecraftonline.com/wiki/Dragon\%27s_Hold}{\ Dragonshold}};
+\draw[fill=white] (Dragonshold) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Quarryton) {\href{http://minecraftonline.com/wiki/Quarryton}{\ Quarryton}};
+\draw[fill=red] (Quarryton) circle (0.15);
+\draw[fill=white] (Quarryton) circle (0.07);
+
+
+\node[rotate=45,anchor=west] at (Floatania) {\href{http://minecraftonline.com/wiki/Floatania}{Floatania}}; \draw[fill=white] (Floatania) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Rasuka) {\href{http://minecraftonline.com/wiki/Rasuka}{\ Rasuka}};
+\draw[fill=white] (Rasuka) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Deckland) {\href{http://minecraftonline.com/wiki/Deckland}{Deckland}}; 
+\draw[fill=white] (Deckland) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Strasbourg) {\href{http://minecraftonline.com/wiki/Strasbourg}{Strasbourg}}; 
+\draw[fill=white] (Strasbourg) circle (0.05);
+
+\node[rotate=45,anchor=west] at (Obernai) {\href{http://minecraftonline.com/wiki/Obernai}{\ Obernai}};
+\draw[fill=violet] (Obernai) circle (0.15);
+\draw[fill=white] (Obernai) circle (0.07);
+
+	\node[rotate=45,anchor=west] at (FRSNWHub) {\href{http://minecraftonline.com/wiki/Deckland}{\ FRSNWHub}}; 
+	\draw[fill=white] (FRSNWHub) circle (0.05);
+	
+	
+	
+	
+
+
+
+
+\node[rotate=45,anchor=west] at (CoffeeTowne) {\href{http://minecraftonline.com/wiki/CoffeeTowne}{CoffeeTowne}}; \draw[fill=white] (CoffeeTowne) circle (0.05);
+\node[rotate=45,anchor=west] at (OldWestBorder) {\href{http://minecraftonline.com/wiki/Old_West-Border}{OldWestBorder}}; \draw[fill=white] (OldWestBorder) circle (0.05);
+
+
+
+
+
+
+
+
+\node[rotate=45,anchor=west] at (Spawn) {\ Spawn Central Station};
+\draw[fill=white] (Spawn) circle (0.15);
+\draw[fill=white] (Spawn) circle (0.09);
+%\draw[fill=white] ($(Spawn) + (0,-0.1)$) circle (0.03);
+\end{tikzpicture}
+\end{turn}
+\end{document}
